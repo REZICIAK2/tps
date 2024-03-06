@@ -18,13 +18,14 @@
         src: url('../src/Kanit-Regular.ttf');
       }
     </style>
+    <script src="../src/script.js"></script>
   </head>
-  <body class="bg-local" style="background-image: url(../Images/bg_nothing_darker.png);background-size: 90% 25%; ">
+  <body class="bg-gradient-to-b from-[#1e293b] to-[#020617]">
     
 
-  <header class="sticky top-0 z-999 bg-[#d23a1f]">
+  <header class="sticky top-0 z-999 bg-[#942815]">
     <div class="   flex flex-wrap justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-left  ">
+      <a href="../Sites/Home.html" class="flex items-left  ">
           <img src="../Images/logo.png" class="h-10" alt="Logo" />
           <span class=" text-2xl font-semibold whitespace-nowrap dark:text-white font-[Taiko]" >Taiko Public Server</span>
       </a>
@@ -35,7 +36,7 @@
           </svg>
       </button>
       <div class=" hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-[13px] bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-[8px]  text-blue-700 md:bg-[#bd341b] dark:border-[#bd341b]">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-[13px] bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-[8px]  text-blue-700 md:bg-[#50150b] dark:border-[#50150b]">
           <li>
             <a href="../Sites/Home.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-white md:dark:hover:text-[#7e2212]" >Home</a>
           </li>
@@ -45,6 +46,9 @@
           <li>
             <a href="../Sites/My_Card.html" class="block py-2 px-3 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">My Card</a>
           </li>
+          <!--<li>
+            <a href="../Sites/Profile.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Profile</a>
+          </li>-->
           <li>
             <a href="../Sites/Friends.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Friends</a>
           </li>
@@ -52,7 +56,7 @@
             <a href="../Sites/Notifications.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Notifications</a>
           </li>
           <li>
-            <a href="../Sites/Profile.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">WRite code here to show user logged with their card</a>
+            <a href="../Sites/Home.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">WRite code here to show user logged with their card</a>
           </li>
         </ul>
       </div>
@@ -64,7 +68,13 @@
     <a href="../Sites/My_scores.html" class="flex-row font-[TaikoKanit] border-solid border-[3px] rounded-[5px] w-[220px] shadow-md shadow-[#54170c] text-center  bg-[#d23a1f] border-[#a82e18] hover:dark:bg-[#7e2212]"><p class="text-white">My scores</p></a>
 
   </nav>
-
+  
+  
+  <div class="border-solid rounded-sm border-2 border-[#2a0b06]  bg-gradient-to-r from-[#2a0b06] to-[#a62e18] pt-3 ">
+    <h2 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white" id="welcome-message">Welcome Back! <p id="usernameOutput">Guest</p></h2>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Let's Play some Charts!</p>
+    
+  </div>
 
 <div class="h-[500px] bg-none"></div>
 <div id="rose" class="h-[500px] bg-none"></div>
@@ -76,7 +86,7 @@
 
 <footer class="bg-white rounded-lg shadow m-4 dark:bg-[#9c1c05]">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">TPS Team</a>. All Rights Reserved.
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://discord.gg/92FJs5CVeB" class="hover:underline">TPS Team</a>. All Rights Reserved.
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
@@ -92,5 +102,7 @@
   </div>
 </footer>
 
+...
+ <!-- Add this line -->
   </body>
 </html>
