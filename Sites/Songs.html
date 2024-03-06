@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taiko Public Server</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <style>
+      @font-face {
+        font-family: Taiko;
+        src: url('../src/Taiko_No_Tatsujin_Official_Font.ttf');
+      }
+      @font-face {
+        font-family: TaikoKanit;
+        src: url('../src/Kanit-Regular.ttf');
+      }
+    </style>
+  </head>
+  <body class="bg-local" style="background-image: url(../Images/bg_nothing_darker.png);background-size: 90% 25%; ">
+    
+
+  <header class="sticky top-0 z-999 bg-[#d23a1f]">
+    <div class="   flex flex-wrap justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-left  ">
+          <img src="../Images/logo.png" class="h-10" alt="Logo" />
+          <span class=" text-2xl font-semibold whitespace-nowrap dark:text-white font-[Taiko]" >Taiko Public Server</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class=" hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-[13px] bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-[8px]  text-blue-700 md:bg-[#bd341b] dark:border-[#bd341b]">
+          <li>
+            <a href="../Sites/Home.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-white md:dark:hover:text-[#7e2212]" >Home</a>
+          </li>
+          <li>
+            <a href="../Sites/Songs.html" class="block py-2 px-3 text-blue-700 rounded  md:hover:bg-transparent md:border-0 md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Songs</a>
+          </li>
+          <li>
+            <a href="../Sites/My_Card.html" class="block py-2 px-3 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">My Card</a>
+          </li>
+          <li>
+            <a href="../Sites/Friends.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Friends</a>
+          </li>
+          <li>
+            <a href="../Sites/Notifications.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Notifications</a>
+          </li>
+          <li>
+            <a href="../Sites/Profile.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:hover:text-rose-900 md:p-0 dark:text-white md:dark:hover:text-[#7e2212] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">WRite code here to show user logged with their card</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header><!--#bd341b-->
+  <nav class="sticky top-[72px] bg-[#bd341b] flex space-x-4 justify-around mb-0 pt-1 pb-2">
+    <a href="../Sites/Online-leaderboard.html" class="flex-row font-[TaikoKanit] border-solid border-[3px] rounded-[5px] w-[220px] shadow-md shadow-[#54170c] text-center  bg-[#d23a1f] border-[#a82e18] hover:dark:bg-[#7e2212]"><p class="text-white"> Online LeaderBoard</p></a>
+    <a href="../Sites/Log_in.html" class="flex-row font-[TaikoKanit] border-solid border-[3px] rounded-[5px] w-[220px] shadow-md shadow-[#54170c] text-center  bg-[#d23a1f] border-[#a82e18] hover:dark:bg-[#7e2212]"><p class="text-white">Login in</p></a>
+    <a href="../Sites/My_scores.html" class="flex-row font-[TaikoKanit] border-solid border-[3px] rounded-[5px] w-[220px] shadow-md shadow-[#54170c] text-center  bg-[#d23a1f] border-[#a82e18] hover:dark:bg-[#7e2212]"><p class="text-white">My scores</p></a>
+
+  </nav>
+
+
+<div class="h-[500px] bg-none"></div>
+<div id="rose" class="h-[500px] bg-none"></div>
+  <div id="huj" class="h-[5000px]"></div>
+
+    
+    
+    
+
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-[#9c1c05]">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">TPS Team</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+          <a href="#" class="hover:underline me-4 md:me-6">About us</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Discord</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Contact</a>
+      </li>
+  </ul>
+  </div>
+</footer>
+
+  </body>
+</html>

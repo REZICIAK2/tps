@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+  :root{
+    --header-height:50px;
+  }
+   
+  @media (max-width: 600px) {
+  nav,
+  article {
+  width: 100%;
+  height: auto;
+  }}
+  .justify-self-end {
+    justify-self: end;
+  }
+  
